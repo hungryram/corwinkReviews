@@ -3,7 +3,7 @@
         <h2>Comments</h2>
     </div>
     <div class="col-sm-12 col-lg-8 offset-lg-2">
-        <form name="BlogComments" action="/comment-thanks" method="POST" netlify-honeypot="bot-field" netlify>
+        <form name="Comments" action="/comment-thanks" method="POST" netlify-honeypot="bot-field" netlify>
             <input name="path" type="hidden" value="{{ .RelPermalink }}">
             <input name="bot-field" type="hidden">
             <div class="form-group">

@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<div class="section agent-lists">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+            </div>
+          </div>
+        <div class="columns is-variable is-8">
+            <div class="column is-8">
+
+                <div class="columns is-multiline">
+                {{ range .Pages.ByWeight }}
+                    <div class="column">
+                        {{ partial "templates/blog-thumbnail" . }}
+                    </div>   
+                {{ end }}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{{ end }}

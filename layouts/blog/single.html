@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column content is-three-fifths is-offset-one-fifth">
+                <img src="{{ .Params.featured_image }}" alt="{{ .Title }}">
+                <h1 class="title is-3 has-text-weight-bold">{{ .Title }}</h1>
+                <div class="blog__post">
+                    {{ .Content }}
+                </div>
+
+                <div id="share-buttons"> 
+                    <h3 class="subtitle is-5">Share this Blog</h3>
+           
+                    <!-- Email -->
+                    <a href="mailto:?Subject=Check%20Out%20This%20Blog&amp;Body=Check%20out%20this%20blog%20from%20{{ .Permalink | absURL }}">
+                      Email
+                    </a>    
+                    <!-- Facebook -->
+                    <a href="http://www.facebook.com/sharer.php?u={{ .Permalink | absURL }}" target="_blank">
+                      Facebook
+                    </a>     
+                    <!-- LinkedIn -->
+                    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Permalink | absURL }}" target="_blank">
+                      Linkedin
+                    </a>       
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/share?url={{ .Permalink | absURL }}&amp;text=Check%20out%20this%20blog%20from%20{{ .Site.Data.profile.logo_and_title.website_title }}" target="_blank">
+                      Twitter
+                    </a>
+                </div> <!-- end share buttons -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-three-fifths is-offset-one-fifth">
+        <h1 class="title is-3">Leave a Comment</h1>
+        <div class="fb-comments pt-6" data-href="{{ .Permalink }}" data-numposts="5" data-width="100%"></div>
+      </div>
+    </div>
+  </div>
+</div>
+{{end}}

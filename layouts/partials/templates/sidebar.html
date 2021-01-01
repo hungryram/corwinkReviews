@@ -1,0 +1,94 @@
+<div class="column filter-products">
+    <div class="category__list">
+      <h2 class="subtitle is-6"><strong>Lash Types</strong></h2>
+        <ul>
+          {{ range $lashType, $taxonomy := index .Site.Taxonomies "lash-types" }}
+          <li>
+            <a href="/lash-types{{ $lashType | urlize | relURL }}" class="category__item" class="secondary-btn">{{ $lashType | humanize }}</a>
+          </li>
+          {{end}}
+
+        </ul>
+    </div>
+    <div class="category__list pt-6">
+      <h2 class="subtitle is-6"><strong>Collections</strong></h2>
+        <ul>
+          {{ range $collection, $taxonomy := .Site.Taxonomies.collections }}
+          <li>
+            <a href="/collections{{ $collection | urlize | relURL }}" class="category__item" class="secondary-btn">{{ $collection | humanize }}</a>
+          </li>
+          {{end}}
+
+        </ul>
+    </div>
+    <div class="category__list pt-6">
+      <h2 class="subtitle is-6"><strong>Lash Materials</strong></h2>
+        <ul>
+          {{ range $lashMaterial, $taxonomy := index .Site.Taxonomies "lash-materials" }}
+          <li>
+            <a href="/lash-materials{{ $lashMaterial | urlize | relURL }}" class="category__item" class="secondary-btn">{{ $lashMaterial | humanize }}</a>
+          </li>
+          {{end}}
+
+        </ul>
+    </div>
+    <div class="category__list pt-6">
+      <h2 class="subtitle is-6"><strong>Eyeliners</strong></h2>
+        <ul>
+          {{ range $eyeliner, $taxonomy := .Site.Taxonomies.eyeliners }}
+          <li>
+            <a href="/eyeliners{{ $eyeliner | urlize | relURL }}" class="category__item" class="secondary-btn">{{ $eyeliner | humanize }}</a>
+          </li>
+          {{end}}
+
+        </ul>
+    </div>
+</div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="category__list">
+      <h2 class="subtitle is-6">Lash Types</h2>
+        <ul>
+          {{ range $lashType, $taxonomy := index .Site.Taxonomies "lash-types" }}
+          <li>
+            <a href="/lash-types{{ $lashType | urlize | relURL }}" class="secondary-btn">{{ $lashType | humanize }}</a>
+          </li>
+          {{end}}
+
+        </ul>
+    </div>
+    <div class="category__list pt-6">
+      <h2 class="subtitle is-6">Collections</h2>
+        <ul>
+          {{ range $collection, $taxonomy := .Site.Taxonomies.collections }}
+          <li>
+            <a href="/collections{{ $collection | urlize | relURL }}" class="secondary-btn">{{ $collection | humanize }}</a>
+          </li>
+          {{end}}
+
+        </ul>
+    </div>
+    <div class="category__list pt-6">
+      <h2 class="subtitle is-6">Lash Materials</h2>
+        <ul>
+          {{ range $lashMaterial, $taxonomy := index .Site.Taxonomies "lash-materials" }}
+          <li>
+            <a href="/lash-materials{{ $lashMaterial | urlize | relURL }}" class="secondary-btn">{{ $lashMaterial | humanize }}</a>
+          </li>
+          {{end}}
+
+        </ul>
+    </div>
+    <div class="category__list pt-6">
+      <h2 class="subtitle is-6">Eyeliners</h2>
+        <ul>
+          {{ range $eyeliner, $taxonomy := .Site.Taxonomies.eyeliners }}
+          <li>
+            <a href="/eyeliners{{ $eyeliner | urlize | relURL }}" class="secondary-btn">{{ $eyeliner | humanize }}</a>
+          </li>
+          {{end}}
+
+        </ul>
+    </div>
+  </div>

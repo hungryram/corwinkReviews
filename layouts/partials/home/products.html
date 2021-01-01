@@ -1,0 +1,16 @@
+<div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <h1 class="head is-4 has-text-weight-bold"><div class="line"></div>Featured Products</h1>
+            </div>
+        </div>
+        <div class="columns is-multiline">
+            {{ range first 4 (where .Site.RegularPages.ByWeight "Type" "products") }}
+                <div class="column is-3">
+                    {{ partial "templates/product__thumbnail" . }}
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</div>

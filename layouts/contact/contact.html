@@ -1,0 +1,82 @@
+{{ define "main" }}
+
+<div class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+            <div class="contact-information">
+                <h2 class="title is-2">Get in Touch</h2>
+                <p>If you have any questions, feel free to contact us. We respond quick!</p>
+                {{ $contactSocial := .Site.Data.profile.social_accounts }}
+                {{ $contactPage := .Site.Data.profile.primary_contact }}
+                            <ul class="contact-page-icons">
+                              {{ if $contactPage.email }}<li>Email: <a href="mailto:{{ $contactPage.email }}" class="secondary-btn">{{ $contactPage.email }}</a></li> {{ end }}
+                              {{ if $contactPage.phone }}<li>Phone: <a href="tel:{{ $contactPage.phone }}" class="secondary-btn">{{ $contactPage.phone }}</a></li> {{ end }}
+                          </ul>
+                          <ul class="contact-page-social mt-5">
+                            {{ if $contactSocial.facebook }}<li class="is-inline"><a href="{{ $contactSocial.facebook }}" target="_blank" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#AC94E8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"/>
+                              <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                            </svg></a></li>{{ end }}
+                            {{ if $contactSocial.instagram }}<li class="is-inline"><a href="{{ $contactSocial.instagram }}" target="_blank" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#AC94E8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"/>
+                              <rect x="4" y="4" width="16" height="16" rx="4" />
+                              <circle cx="12" cy="12" r="3" />
+                              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                            </svg></a></li>{{ end }}
+                            {{ if $contactSocial.yelp }}<li class="is-inline"><a href="{{ $contactSocial.yelp }}" target="_blank" title="Yelp"><i class="fab fa-yelp"></i></a></li>{{ end }}
+                            {{ if $contactSocial.linkedin }}<li class="is-inline"><a href="{{ $contactSocial.linkedin }}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>{{ end }}
+                            {{ if $contactSocial.pinterest }}<li class="is-inline"><a href="{{ $contactSocial.pinterest }}" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>{{ end }}
+                          </ul>
+            </div>
+        </div>
+        <div class="column">
+          <div class="form-container">
+            <form name="Contact Form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+              <input name="bot-field" type="hidden"/>
+              <input name="Subject" type="hidden" value="Website Contact Form"/>
+              <div class="field is-horizontal">
+                  <div class="field-body">
+                      <div class="field">
+                          <p class="control is-expanded">
+                              <input class="input" type="text" placeholder="Name" name="name" required>
+                            </p>
+                      </div>
+                      <div class="field">
+                          <div class="control">
+                            <input class="input" type="text" placeholder="Phone" name="phone" required>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+    
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="email" placeholder="Email" name="email address" required>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <textarea class="textarea" placeholder="Your Message" name="message" required></textarea>
+                </div>
+              </div>
+
+              <div class="control">
+                <button class="button" style="width:100%;">Submit</button>
+              </div>
+              <div class="field mt-5">
+                <div class="control content">
+                  <label class="checkbox">
+                    <input type="checkbox" required>
+                    <span class="is-size-7">By submitting this form you confirm you have read and agreed to our <a href="/legal/terms-and-conditions">Terms and Conditions</a> and <a href="/legal/privacy-policy">Privacy Policy.</a> You consent to having this website store the submitted information so we can respond to the inquiry. Don't worry, you can request to have your information removed anytime.</span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+{{ end }}

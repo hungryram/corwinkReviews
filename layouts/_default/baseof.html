@@ -1,15 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    {{ block "head" . }}
-        {{ partial "head.html" . }}
-    {{ end }}
-</head>
-<body class="text-dark flex flex-col font-sans">
-    <main class="flex flex-col w-full lg:w-2/3 xl:w-1/2 justify-center items-center px-4 lg:px-0 mx-auto" style="min-height: 100vh;">
-        {{ block "main" . }}
-            <!-- content of the respective page -->
-        {{ end }}
-    </main>
-</body>
-</html>
+{{ partial "global/head" . }}
+{{ partial "global/navbar" . }}
+<div class="section">
+    <div class="container">
+        <div class="columns is-vcentered is-mobile is-variable is-0">
+            <div class="column">
+                <div class="banner-page has-text-centered">
+                    <h1 class="head is-1 has-text-centered page-title is-size-4-mobile">{{ .Title }}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ block "main" . }}
+
+{{ end }}
+{{ partial "global/footer.html" . }}

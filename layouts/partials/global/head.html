@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{- if in .Permalink "admin" -}}
+<meta name="robots" content="noindex, nofollow">
+{{ else }}
+<meta name="robots" content="index, follow">
+{{- end -}}
+
+{{- if $.IsHome -}}
+<!-- SCHEMA -->
+{{ partial "global/schema" . }}
+{{- end -}}
+
+<!-- START SEO -->
+{{ partial "global/seo" . }}
+<!-- SOCIAL SEO -->
+{{ partial "global/social" . }}
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+
+<!-- STYLESHEETS AND RESOURCES-->
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.css" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.8/slick-lightbox.css"/>
+<link rel="stylesheet" type="text/css" href="{{.Site.BaseURL}}css/slick-theme.css"/>
+<link rel="stylesheet" href="{{.Site.BaseURL}}css/styles.css">
+
+<!-- FAVICON -->
+<link rel="shortcut icon" href="{{ .Site.Data.appearance.branding.favicon }}" />
+
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0" nonce="rlyuEnDN"></script>

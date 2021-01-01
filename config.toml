@@ -1,12 +1,35 @@
-# SETUP
-baseurl = "https://hugo-comments.netlify.com/"
+baseURL = "https://eager-boyd-45f523.netlify.app/"
+languageCode = "en-us"
+canonifyUrls = "false"
 publishdir = "public"
 DefaultContentLanguage = "en"
+[[menu.main]]
+name = "Shop"
+weight = 5
+url = "/products"
+[[menu.main]]
+name = "Blog"
+url = "/blog"
+weight = 4
+[[menu.main]]
+name = "FAQ"
+weight = 3
+url = "/faq"
+[[menu.main]]
+name = "Contact"
+weight = 8
+url = "/contact"
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+[taxonomies]
+category = "categories"
+eyeliner = "eyeliners"
+lash-material = "lash-materials"
+lash-type = "lash-types"
+tag = "tags"
+collection = "collections"
 #canonifyUrls = "true"
-googleAnalytics = ""
-disableKinds = ["RSS","taxonomy","taxonomyTerm","sitemap"] #remove this when blog goes live
-summaryLength = 40
-
-[params]
-    year = "2019"
-    author = "ttntm"

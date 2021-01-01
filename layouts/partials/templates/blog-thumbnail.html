@@ -1,0 +1,12 @@
+<a href="{{ .Permalink }}">
+    <div class="mb-5 ml-2 mr-2">
+        <div class="card-image">
+            <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" style="border-radius: 8px;">
+        </div>
+        <div class="pb-4">
+            <div class="product__title has-text-left-desktop has-text-centered-mobile">
+                <h1 class="title is-6 mt-4 mb-0">{{ .Title }}</h1>
+            </div>
+        </div>
+    </div>
+</a>

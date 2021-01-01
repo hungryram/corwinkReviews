@@ -1,9 +1,15 @@
 {{ define "main" }}
-<div class="w-full post flex flex-col flex-no-wrap text-center self-center justify-center mt-10 mb-12">
-    <h1 class="font-bold">{{ .Title }}</h1>
-    {{ with .Description }}
-        <p>{{ . }}</p>
-    {{ end }}
-    {{ .Content }}
+<div class="section">
+    <div class="container">
+        <div class="columns is-variable is-8">
+            <div class="column is-8">
+                <main>
+                    <div class="inner-container content">
+                        {{ .Content }}
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
 </div>
 {{ end }}

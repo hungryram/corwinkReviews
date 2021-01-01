@@ -1,0 +1,17 @@
+---
+featured:
+  featured:
+  - heading: Magnetic Lashes
+    image: "/uploads/virtue-lash.png"
+    link: "/lash-types/magnetic-lashes/"
+  - heading: Strip Lashes
+    image: "/uploads/unique-1.JPG"
+    link: "/lash-types/strip-lashes/"
+  - heading: Magic Liners
+    image: "/uploads/purple-pen-1.jpeg"
+    link: "/eyeliners/magic-liners/"
+  - heading: UV Neon Pastel Liners
+    image: "/uploads/groups.jpeg"
+    link: "/eyeliners/uv-neon-pastel-liners/"
+  heading: ''
+  body: ''

@@ -1,0 +1,19 @@
+<a href="{{ .Permalink }}">
+    <div class="mb-5 ml-2 mr-2 shop-grid">
+        <div class="card-image">
+            <img src="{{ index .Params.gallery 0 }}" alt="Lipstick Kiss Cotton Face Mask" style="border-radius: 8px;">
+            {{ if .Params.on_sale }}<span class="sale-tag">Sale</span>{{ end }}   
+        </div>
+        <div class="pb-4">
+            <div class="product__title has-text-left-desktop has-text-centered-mobile">
+                <h1 class="title is-6 mb-0">{{ .Title }}</h1>
+                {{ if .Params.on_sale }}
+                <span class="sale-price mr-2">${{ lang.NumFmt 2 .Params.price }}</span>
+                <p class="is-inline">${{ lang.NumFmt 2 .Params.sale_price }}</p>
+                {{ else }}
+                <p class="is-inline">${{ lang.NumFmt 2 .Params.sale_price }}</p>
+                {{ end }}
+            </div>
+        </div>
+      </div>
+</a>

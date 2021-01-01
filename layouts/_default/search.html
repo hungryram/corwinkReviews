@@ -1,0 +1,68 @@
+{{ define "main" }}
+
+<div class="section" style="background: ;">
+  <div class="container">
+      <div class="columns is-vcentered is-mobile is-variable is-0">
+          <div class="column">
+              <div class="banner-page has-text-centered">
+                  <h1 class="head is-2 has-text-centered">{{ .Title }}</h1>
+                  <div class="has-text-centered">
+                      {{ partial "templates/breadcrumbs" . }}
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="section filter-nav pb-0 pt-0">
+  <div class="container">
+      <div class="columns">
+          <div class="column">
+              <span style="font-size:16px;cursor:pointer" onclick="openNav()">&#9776; Filter</span>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+      <div class="columns">
+        {{ partial "templates/sidebar" . }}
+          <div class="column is-9">
+            <main>
+
+              <div class="inner-container">
+                  <div class="columns is-multiline is-variable" id="search-results">
+                              <!-- APPEND RESULT TEMPLATE -->
+                  </div>
+                  
+              </div>
+              
+          </main>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- this template is sucked in by search.js and appended to the search-results div above. So editing here will adjust style -->
+<script id="search-result-template" type="text/x-js-template">
+  <div class="column is-4">
+  <div class="thumbnail__product">
+    <a href="${link}">
+        <div class="thumbnail__container">
+            <div class="thumbnail__image" style="background:url(${image}) no-repeat center;background-size:cover;"></div>
+            {{ if .Params.on_sale }}<span class="sale-tag">Sale</span>{{ end }}
+        </div>
+    </a>
+    <div class="columns is-desktop thumbnail__details mb-1 pb-1">
+        <div class="column is-8">
+            <div class="product__title has-text-left-desktop has-text-centered-mobile">
+                <h1 class="title is-6 mt-4 mb-0">${title}</h1>
+                <p class="has-text-left-mobile has-text-left-desktop has-text-weight-bold"></p>
+            </div>
+        </div>
+    </div>
+</div>   
+</div>
+</script>
+{{ end }}

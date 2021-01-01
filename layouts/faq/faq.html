@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="section">
+    <div class="container">
+      <div class="columns has-text-centered pb-6">
+        <div class="column">
+          <p>Don't see what you're looking for? Send us a message and we'll answer it</p>
+        </div>
+      </div>
+        <div class="columns">
+            <div class="column is-three-fifths is-offset-one-fifth">
+                <div id="accordion" class="faq">
+                    {{ range .Params.faq }}
+
+                    <h3 class="title is-6">{{ .question }}<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round" style="float:right">
+                        <path stroke="none" d="M0 0h24v24H0z"/>
+                        <polyline points="6 9 12 15 18 9" />
+                      </svg></h3>
+                    <div>
+                      <p class="content">{{ .answer | markdownify }}</p>
+                    </div>
+                    {{ end }}
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}

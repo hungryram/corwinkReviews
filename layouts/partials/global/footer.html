@@ -1,0 +1,130 @@
+  
+{{ $footer := .Site.Data.profile }}
+{{ $footerSocial := .Site.Data.profile.social_media }}
+<footer class="footer pb-0">
+    <div class="section">
+        <div class="container">
+            <div class="columns is-variable is-8">
+                <div class="column">
+                    <h4 class="title is-6">Terms and conditions</h4>
+                    <ul>
+                        {{ range where $.Site.Pages.ByWeight "Type" "legal" }}
+                        <li><a href="{{ .Permalink }}" class="mx-2 has-text-white">{{ .Title }}</a></li>
+                        {{ end }}
+                      </ul>
+                </div>
+                <div class="column">
+                    <h4 class="title is-6 ">Information</h4>
+                    <ul>
+                        <li><a href="" class="has-text-white">FAQ</a></li>
+                        <li><a href="" class="has-text-white">About CorWink Cosmetics</a></li>
+                        <li class="mt-4"><a href="" class="has-text-white">corwinkcosmetics@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4 class="title is-6 ">Account</h4>
+                    <ul>
+                        <li><a href="" class="has-text-white">My Account</a></li>
+                        <li><a href="" class="has-text-white">Shopping Cart</a></li>
+                        <li><a href="" class="has-text-white">Feedback</a></li>
+                        <li><a href="/contact" class="has-text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <h4 class="title is-6 ">Join the CorWink Crew</h4>
+                    <form action="https://corwinkcosmetics.us17.list-manage.com/subscribe/post?u=51dac709eaaf4cafbd4283218&amp;id=7983c32e10" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                    
+                    <div class="mc-field-group">
+                    <input type="email" value="" name="EMAIL" class="required email input" id="mce-EMAIL" placeholder="Email Address">
+                    </div>
+                    <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_51dac709eaaf4cafbd4283218_7983c32e10" tabindex="-1" value=""></div>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="level pt-6">
+                <div class="level-left">
+                    <div class="level-item">
+                        <div>
+                            <ul class="mb-4">
+                                <li class="is-inline mr-4"><svg viewBox="0 0 174 56" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Visa" title="Visa" class="snipcart__icon--brand snipcart__icon"><path d="M74.98 55.192H60.965L69.73.982h14.016l-8.766 54.21zM125.793 2.308C123.028 1.21 118.643 0 113.221 0c-13.842 0-23.59 7.381-23.65 17.934-.114 7.786 6.98 12.111 12.285 14.707 5.423 2.653 7.267 4.385 7.267 6.75-.056 3.63-4.382 5.305-8.418 5.305-5.596 0-8.595-.863-13.151-2.884l-1.846-.866-1.962 12.169c3.288 1.498 9.345 2.827 15.633 2.885 14.707 0 24.282-7.267 24.396-18.513.056-6.171-3.69-10.9-11.766-14.764-4.902-2.48-7.905-4.152-7.905-6.69.058-2.307 2.54-4.67 8.074-4.67 4.557-.116 7.905.98 10.441 2.075l1.268.576 1.906-11.706zM144.423 35.988c1.154-3.114 5.596-15.168 5.596-15.168-.058.116 1.152-3.171 1.844-5.19l.98 4.672s2.654 12.976 3.23 15.686h-11.65zM161.725.983h-10.842c-3.344 0-5.884.98-7.326 4.498l-20.821 49.71h14.708l2.942-8.131h17.996a2177.47 2177.47 0 0 1 1.673 8.132h12.978L161.725.982zM49.257.983L35.529 37.949l-1.5-7.497C31.491 21.8 23.532 12.401 14.65 7.729l12.574 47.406h14.822L64.078.983H49.256z" fill="#00579F"></path><path d="M22.782.983H.232L0 2.078C17.592 6.577 29.242 17.42 34.03 30.454L29.126 5.54c-.807-3.463-3.288-4.443-6.345-4.557z" fill="#FAA61A"></path></svg></li>
+                                <li class="is-inline">
+                                    <svg viewBox="0 0 104 64" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Mastercard" title="Mastercard" class="snipcart__icon--brand snipcart__icon"><path d="M67.173 6.842H36.37v50.31h30.803V6.842z" fill="#FF5F00"></path><path d="M39.543 32.002a31.939 31.939 0 0 1 12.22-25.15 31.994 31.994 0 1 0 0 50.31 31.939 31.939 0 0 1-12.22-25.16z" fill="#EB001B"></path><path d="M103.53 32.002a31.991 31.991 0 0 1-35.41 31.81 31.994 31.994 0 0 1-16.357-6.66 31.992 31.992 0 0 0 0-50.31 31.994 31.994 0 0 1 51.767 25.151v.009z" fill="#F79E1B"></path></svg>
+                                </li>
+                            </ul>
+                            <p class="is-size-7 has-text-centered-mobile">&copy; Copyright {{ dateFormat "2006" now }}, {{ .Site.Data.profile.company_name }}  &middot; <a href="https://hungryram.com" target="_blank" class="is-size-7 has-text-white">Website Developed by Hungry Ram</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item has-text-centered-mobile">
+                        <div>
+                            {{ $contactSocial := .Site.Data.profile.social_accounts }}
+
+                            <ul class="contact-page-social">
+                                {{ if $contactSocial.facebook }}<li class="is-inline"><a href="{{ $contactSocial.facebook }}" target="_blank" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                  <path stroke="none" d="M0 0h24v24H0z"/>
+                                  <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                                </svg></a></li>{{ end }}
+                                {{ if $contactSocial.instagram }}<li class="is-inline"><a href="{{ $contactSocial.instagram }}" target="_blank" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                  <path stroke="none" d="M0 0h24v24H0z"/>
+                                  <rect x="4" y="4" width="16" height="16" rx="4" />
+                                  <circle cx="12" cy="12" r="3" />
+                                  <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                                </svg></a></li>{{ end }}
+                                {{ if $contactSocial.yelp }}<li class="is-inline"><a href="{{ $contactSocial.yelp }}" target="_blank" title="Yelp"><i class="fab fa-yelp"></i></a></li>{{ end }}
+                                {{ if $contactSocial.linkedin }}<li class="is-inline"><a href="{{ $contactSocial.linkedin }}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>{{ end }}
+                                {{ if $contactSocial.pinterest }}<li class="is-inline"><a href="{{ $contactSocial.pinterest }}" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>{{ end }}
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js"></script>
+<script src="{{.Site.BaseURL}}/js/main.js"></script>
+<script src="{{.Site.BaseURL}}/js/lax.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
+<script src="{{ "js/search.js" | absURL }}"></script>
+<script async src="https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.js"></script>
+<div id="snipcart" data-config-modal-style="side" data-api-key="Yjk5Y2Y0MjUtZDc1Yy00MTA0LWFiOWYtMWQyNDZhOTA0NTRjNjM3MzA0NzQwMTA0MzQyOTA0" hidden></div>
+<script>
+    window.onload = function() {
+      lax.setup() // init
+    
+      const updateLax = () => {
+        lax.update(window.scrollY)
+        window.requestAnimationFrame(updateLax)
+      }
+    
+      window.requestAnimationFrame(updateLax)
+
+      lax.setup({
+        breakpoints: { small: 0, large: 992 }
+    })
+    }
+  </script>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+</body>
+</html>

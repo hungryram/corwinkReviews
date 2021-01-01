@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<div class="section agent-lists">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+            </div>
+          </div>
+        <div class="columns is-variable is-8">
+            <div class="column is-8">
+
+                <div class="columns is-multiline">
+                {{ $paginator := .Paginate (where .Pages "Type" "blog") 6 }}
+                {{ range $paginator.Pages.ByWeight }}
+                    <div class="column is-6">
+                        {{ partial "templates/blog-thumbnail" . }}         
+                    </div>   
+                {{ end }}
+                </div>
+                {{ partial "templates/pagination" . }}
+            </div>
+            {{ partial "templates/blog-sidebar" . }}
+
+        </div>
+
+    </div>
+</div>
+
+{{ end }}

@@ -9,9 +9,10 @@
     {{ range $comments }}
         {{ range . }}
             {{ if eq .path $thisPost }}
-            <div class="column is-full" style="border-bottom:1px solid #eee;">
+            <div class="column is-full review-row pt-4" style="border: 1px solid #FAFAFA;">
                 <div class="content">
-                    <p class="is-size-6">{{ .comment }}</p>
+                    <h4 class="title is-6">{{ .heading }}</h4>
+                    <p class="is-size-">{{ .comment }}</p>
                     <small><span>By <strong>{{ .name }}</strong></span><span> on {{ .date | dateFormat "Jan 2, 2006" }}</span></small>
                 </div>
             </div>
@@ -19,4 +20,6 @@
         {{ end }}
     {{ end }}
     </div>
+{{ else }}
+<h4 class="title is-4 has-text-weight-normal has-text-centered">No reviews for this product yet</h4>
 {{ end }}

@@ -2,6 +2,22 @@
     display: none;
 }
 
+.review-row:nth-child(odd) {
+    background: #FAFAFA;
+}
+
+.review-btn {
+    background: #ac94e8;
+    color: #fff;
+    font-size: 14px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.review-btn:hover {
+    transition: .3s;
+}
+
 /* NAVBAR */
 
 div.top-bar {

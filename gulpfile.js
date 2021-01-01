@@ -30,6 +30,7 @@ gulp.task("get-comments", function (done) {
 
         var comment = {
           name: data.Name,
+          heading: data.Heading,
           // avatar: gravatar.url(data.email, {s: '100', r: 'x', d: 'retro'}, true),
           comment: data.Comment,
           path: data.path,

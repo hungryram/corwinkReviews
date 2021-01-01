@@ -1,0 +1,30 @@
+{
+  "name": "hugo-comments",
+  "version": "1.0.0",
+  "private": true,
+  "description": "comment test site",
+  "scripts": {
+    "start": "gulp dev && hugo server",
+    "deploy": "gulp build && hugo --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttntm/hugo-comments.git"
+  },
+  "author": "ttntm",
+  "homepage": "https://hugo-comments.netlify.com",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "dotenv": "^8.1.0",
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-purgecss": "^2.1.2",
+    "request": "^2.88.0",
+    "tailwindcss": "^1.0.5"
+  }
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ block "head" . }}
+        {{ partial "head.html" . }}
+    {{ end }}
+</head>
+<body class="text-dark flex flex-col font-sans">
+    <main class="flex flex-col w-full lg:w-2/3 xl:w-1/2 justify-center items-center px-4 lg:px-0 mx-auto" style="min-height: 100vh;">
+        {{ block "main" . }}
+            <!-- content of the respective page -->
+        {{ end }}
+    </main>
+</body>
+</html>

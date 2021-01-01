@@ -191,7 +191,6 @@
                             <p class="is-size-7">{{ .Params.details.band }}</p>
                         </div>
                     </div>
-                    {{ partial "comment-form" }}
                     {{ end }}
                 </div>
             </div>
@@ -205,7 +204,39 @@
             <div class="column is-half is-offset-one-quarter has-text-centered">
                 <p class="mb-4">Share your thoughts with other customers</p>
                 <p class="button review-btn">Write a Review</p>
-                <div class="review-form mt-6">
+                <div class="review-form mt-6 hidden">
+                    <form name="Comments" action="/comment-thanks" method="POST" netlify-honeypot="bot-field" netlify>
+                        <input name="bot-field" type="hidden"/>
+                        <input name="path" type="hidden" value="{{ .RelPermalink }}">
+                        <div class="field">
+                          <div class="control">
+                            <input class="input" type="text" placeholder="Heading" name="Heading" required>
+                          </div>
+                        </div>
+                        <div class="field is-horizontal">
+                            <div class="field-body">
+                                <div class="field">
+                                    <p class="control is-expanded">
+                                        <input class="input" type="text" placeholder="Name" name="Name" required>
+                                      </p>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                      <input class="input" type="email" placeholder="email" name="Email" required>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                          <div class="control">
+                            <textarea class="textarea" placeholder="Your Review" name="Comment" required></textarea>
+                          </div>
+                        </div>
+                    
+                        <div class="control">
+                          <button class="button" style="width:100%;">Submit</button>
+                        </div>
+                      </form>
                 </div>
             </div>
         </div>

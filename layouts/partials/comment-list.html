@@ -1,4 +1,4 @@
-{{ $thisPost := .RelPermalink }}
+{{ $thisPost := .Permalink }}
 {{ $comments := .Site.Data.comments }}
 {{ $.Scratch.Set "counter" 0 }}
 {{ range $comments }}

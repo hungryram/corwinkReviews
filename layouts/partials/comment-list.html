@@ -9,11 +9,42 @@
     {{ range $comments }}
         {{ range . }}
             {{ if eq .path $thisPost }}
-            <div class="column is-full review-row pt-4" style="border: 1px solid #FAFAFA;">
+            <div class="column is-full review-row pt-5 pb-5" style="border-bottom: 1px solid #c9c9c9">
                 <div class="content">
-                    <h4 class="title is-6">{{ .heading }}</h4>
-                    <p class="is-size-">{{ .comment }}</p>
-                    <small><span>By <strong>{{ .name }}</strong></span><span> on {{ .date | dateFormat "Jan 2, 2006" }}</span></small>
+                    {{ if eq .rating "5" }}
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    {{ else if eq .rating "4" }}
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    {{ else if eq .rating "3" }}
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    {{ else if eq .rating "2" }}
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    {{ else if eq .rating "1" }}
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    {{ end }}
+                    <h4 class="title is-6 mt-3 mb-2 is-inline">{{ .heading }}</h4>
+                    <small class="is-size-7 is-block"><span>By <strong>{{ .name }}</strong></span><span> on {{ .date | dateFormat "Jan 2, 2006" }}</span></small>
+                    <p class="review-body mt-4">{{ .comment }}</p>
                 </div>
             </div>
             {{ end }}

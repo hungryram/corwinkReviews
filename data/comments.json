@@ -1,6 +1,22 @@
 {
   "/products/virtue-strip-lash/": [
     {
+      "name": "ram",
+      "heading": "This is 3 stars",
+      "comment": "giving it 3 stars",
+      "path": "/products/virtue-strip-lash/",
+      "rating": "3",
+      "date": "2021-01-01T08:53:44.878Z"
+    },
+    {
+      "name": "anon",
+      "heading": "5 stars",
+      "comment": "my 5 stars",
+      "path": "/products/virtue-strip-lash/",
+      "rating": "5",
+      "date": "2021-01-01T08:52:11.340Z"
+    },
+    {
       "name": "kalvin",
       "heading": "The BEST EVER SECOND",
       "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore exercitationem placeat rem quasi nostrum ab quam amet quae corporis atque consequuntur sunt, eos tempore at aspernatur voluptatum vitae suscipit id?\r\n",

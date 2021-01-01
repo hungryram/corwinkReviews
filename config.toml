@@ -1,4 +1,4 @@
-baseURL = "https://eager-boyd-45f523.netlify.app/"
+baseURL = "https://corwink2021.netlify.app/"
 languageCode = "en-us"
 canonifyUrls = "false"
 publishdir = "public"

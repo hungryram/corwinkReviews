@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     fs = require('fs'),
     config = require('dotenv').config();
     var buildSrc = "./";
+    var buildDest = "public";
 
 gulp.task("get-comments", function (done) {
 
@@ -52,4 +53,6 @@ gulp.task("get-comments", function (done) {
         }
     });
 });
-gulp.task('build', gulp.series('your-other-stuff-if-any','get-comments'));
+gulp.task('dev', gulp.series('procss','get-comments'));
+
+gulp.task('build', gulp.series('procss','get-comments'));

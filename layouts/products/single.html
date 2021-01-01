@@ -208,11 +208,34 @@
                     <form name="Comments" action="/comment-thanks" method="POST" netlify-honeypot="bot-field" netlify>
                         <input name="bot-field" type="hidden"/>
                         <input name="path" type="hidden" value="{{ .RelPermalink }}">
+                        <div class="field rating">
+                            <legend>Rating</legend>
+      
+                            <input id="star-1" type="radio" name="rating" value="1"> 
+                            <label for="star-1">1 star</label>
+                            <input id="star-2" type="radio" name="rating" value="2">
+                            <label for="star-2">2 stars</label>
+                            <input id="star-3" type="radio" name="rating" value="3">
+                            <label for="star-3">3 stars</label>
+                            <input id="star-4" type="radio" name="rating" value="4">
+                            <label for="star-4">4 stars</label>
+                            <input id="star-5" type="radio" name="rating" value="5">
+                            <label for="star-5">5 stars</label>
+                            
+                            <div class="stars">
+                                <label for="star-1" aria-label="1 star" title="1 star"></label>
+                                <label for="star-2" aria-label="2 stars" title="2 stars"></label>
+                                <label for="star-3" aria-label="3 stars" title="3 stars"></label>
+                                <label for="star-4" aria-label="4 stars" title="4 stars"></label>
+                                <label for="star-5" aria-label="5 stars" title="5 stars"></label>
+                            </div>
+                        </div>
                         <div class="field">
                           <div class="control">
                             <input class="input" type="text" placeholder="Heading" name="Heading" required>
                           </div>
                         </div>
+
                         <div class="field is-horizontal">
                             <div class="field-body">
                                 <div class="field">
@@ -299,6 +322,5 @@
         button.setAttribute("data-item-custom2-value", color.value)
       });
 </script>
-
 {{ end }}
 

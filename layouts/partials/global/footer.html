@@ -126,5 +126,14 @@
       document.getElementById("mySidenav").style.width = "0";
     }
     </script>
+    <script>
+        (function(){
+            var rating = document.querySelector('.rating');
+            var handle = document.getElementById('toggle-rating');
+            handle.onchange = function(event) {
+                rating.classList.toggle('rating', handle.checked);
+            };
+        }());
+    </script>
 </body>
 </html>

@@ -71,6 +71,16 @@ label[for]:hover {
     color: #808080;
 }
 
+#btn {
+    background: transparent;
+    border: 0;
+    font-size: 16px;
+    color: #ac94e8;
+    font-style: italic;
+    cursor: pointer;
+    font-weight: 500;
+}
+
 /* NAVBAR */
 
 div.top-bar {

@@ -7,7 +7,7 @@
 {{ if gt ($.Scratch.Get "counter") 0 }}{{/*  only show comment section if there are comments  */}}
     <div class="columns is-multiline">
     {{ range $comments }}
-        {{ range . }}
+        {{ range first 4 . }}
             {{ if eq .path $thisPost }}
             <div class="column is-full review-row pt-5 pb-5" style="border-bottom: 1px solid #c9c9c9">
                 <div class="content">
@@ -53,4 +53,64 @@
     </div>
 {{ else }}
 <h4 class="title is-4 has-text-weight-normal has-text-centered">No reviews for this product yet</h4>
+{{ end }}
+{{ if gt ($.Scratch.Get "counter") 4 }}
+<div class="modal" id="myModal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">All Reviews</p>
+        <button class="delete" aria-label="close" data-bulma-modal="close"></button>
+      </header>
+      <section class="modal-card-body">
+        {{ range $comments }}
+        {{ range . }}
+            {{ if eq .path $thisPost }}
+            <div class="column is-full review-row pt-5 pb-5" style="border-bottom: 1px solid #c9c9c9">
+                <div class="content">
+                    {{ if eq .rating "5" }}
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15" class="mr-3">
+                    {{ else if eq .rating "4" }}
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15" class="mr-3">
+                    {{ else if eq .rating "3" }}
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15" class="mr-3">
+                    {{ else if eq .rating "2" }}
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15" class="mr-3">
+                    {{ else if eq .rating "1" }}
+                    <img src="/assets/stars-filled.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15">
+                    <img src="/assets/stars-empty.svg" alt="" width="15" class="mr-3">
+                    {{ end }}
+                    <h4 class="title is-6 mt-3 mb-2 is-inline">{{ .heading }}</h4>
+                    <small class="is-size-7 is-block"><span>By <strong>{{ .name }}</strong></span><span> on {{ .date | dateFormat "Jan 2, 2006" }}</span></small>
+                    <p class="review-body mt-4">{{ .comment }}</p>
+                </div>
+            </div>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+      </section>
+    </div>
+  </div>
+  
+  <button id="btn" class="mt-3">...View All Reviews</button>
+
 {{ end }}

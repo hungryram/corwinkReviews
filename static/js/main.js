@@ -76,3 +76,14 @@ $('.product-slide').slick({
       }
     
     });
+
+    $(document).ready(function() {
+
+      // Check for click events on the navbar burger icon
+      $(".review-btn").click(function() {
+    
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          $(".review-form").toggleClass("hidden");
+    
+      });
+    });

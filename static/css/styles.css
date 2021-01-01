@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 /* NAVBAR */
 
 div.top-bar {
@@ -374,7 +378,7 @@ select.selectVar {
 }
 
 .product_details .columns {
-    background: #eee;
+    background: #FAFAFA;
 }
 
 /* FILTER */

@@ -193,16 +193,30 @@
                     </div>
                     {{ end }}
                 </div>
-                <div class="fb-comment-review mt-6">
-                    <h1 class="title is-4">Product Reviews</h1>
-                    {{ partial "comment-form" . }}
-                    {{ partial "comment-list" . }}
-                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="section">
+<div class="section mb-6">
+    <div class="container">
+        <h1 class="title is-4 has-text-centered">Customer Reviews</h1>
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter has-text-centered">
+                <p class="mb-4">Share your thoughts with other customers</p>
+                <p class="button review-btn">Write a Review</p>
+                <div class="review-form mt-6 hidden">
+                    {{ partial "comment-form" }}
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                    {{ partial "comment-list" . }}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section" style="background:#FAFAFA">
     <div class="container">
         <div class="columns">
             <div class="column">
@@ -218,6 +232,7 @@
         </div>
     </div>
 </div>
+
 <script>
     const button = document.querySelector('#add-cart');
     const styles = document.querySelector('#styles');

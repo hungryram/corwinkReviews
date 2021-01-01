@@ -1,7 +1,3 @@
-[build]
-publish = "public"
-command = "npm run deploy"
-
 [context.production.environment]
 HUGO_VERSION = "0.67.0"
 HUGO_ENV = "production"

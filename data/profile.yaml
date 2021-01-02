@@ -19,3 +19,17 @@ search_engine_optimization:
   title_tag: Corwink Cosmetics | Affordable Handmade Luxury Lashes
   meta_description: Find affordable handmade and cruelty free eyelashes.
 company_name: CorWink Cosmetics
+welcome:
+  welcome:
+  - heading: Visit the Website
+    link: "/"
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1609121733/corinne-renteria/corwinkcosmetics/corwinklogo_aulh2x.png
+  - image: https://res.cloudinary.com/hungryram19/image/upload/v1609121737/corinne-renteria/corwinkcosmetics/img_1058_r1lwlu.jpg
+    heading: Shop Magnetic Lashes
+    link: "/lash-types/magnetic-lashes/"
+  - heading: Shop the Classics
+    link: "/collections/corwink-classics/"
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1609372623/corinne-renteria/corwinkcosmetics/virtue-4_cropped_qwcruk.png
+  - heading: Contact Me
+    link: "/contact"
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1609121751/corinne-renteria/corwinkcosmetics/8da046aa-6d57-4c01-92a1-e2f3379b9e3a_lsw2lu.jpg

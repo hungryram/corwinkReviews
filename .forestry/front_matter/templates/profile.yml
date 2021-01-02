@@ -196,3 +196,5 @@ fields:
       labelField: 
     label: Welcome
   label: Welcome
+pages:
+- data/profile.yaml

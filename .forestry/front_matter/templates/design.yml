@@ -208,5 +208,15 @@ fields:
         format: markdown
     label: Footer Bio
   label: Footer
+- name: header
+  type: field_group
+  config: {}
+  fields:
+  - name: header_text
+    type: text
+    config:
+      required: false
+    label: Header Text
+  label: Header
 pages:
 - data/design.yaml

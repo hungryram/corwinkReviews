@@ -182,6 +182,15 @@ fields:
     config:
       maxSize: 64
     label: Background
+  - name: body
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Body
   - name: welcome
     type: field_group_list
     fields:

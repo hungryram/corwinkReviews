@@ -516,6 +516,15 @@ select.selectVar {
     margin: 0 20px;
 }
 
+@media screen and (max-width:768px){
+    .page-title:after,
+.page-title:before {
+    width:8px;
+    height:8px;
+    bottom: 5px;
+}
+}
+
 .product_details .columns {
     background: #FAFAFA;
 }

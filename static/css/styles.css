@@ -199,6 +199,11 @@ h6.title,
     color: #AC94E8;
 }
 
+body .content a,
+.link {
+    color: #AC94E8;
+}
+
 .is-7 {
     font-size: 12px;
 }

@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 title = "Terms & Conditions"
 url = ""
 [search_engine_optimization]

@@ -1,0 +1,147 @@
+---
+label: Products
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Product Title
+- name: weight
+  type: number
+  label: Order Products
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  description: Enter in a number for ordering product appearance.
+- name: price
+  type: number
+  label: Price
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: on_sale
+  type: boolean
+  label: On Sale
+- name: sale_price
+  type: number
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  label: Sale Price
+  showOnly:
+    field: on_sale
+    value: true
+- name: sku
+  type: text
+  config:
+    required: false
+  label: SKU
+- name: collections
+  type: tag_list
+  default: []
+  label: Collections
+- name: lash-types
+  type: tag_list
+  default: []
+  label: Lash Type
+- name: lash-materials
+  type: tag_list
+  default: []
+  label: Lash Material
+- name: eyeliners
+  type: tag_list
+  default: []
+  label: Eyeliners
+- name: gallery
+  type: image_gallery
+  config: {}
+  label: Gallery
+  description: First image will be displayed as main image
+- name: details
+  type: field_group
+  config: {}
+  fields:
+  - name: lash_height
+    type: text
+    config:
+      required: false
+    label: Lash Height
+  - name: length
+    type: text
+    config:
+      required: false
+    label: Length
+  - name: material
+    type: text
+    config:
+      required: false
+    label: Material
+  - name: band
+    type: text
+    config:
+      required: false
+    label: Band
+  - name: vegan
+    type: boolean
+    label: Vegan
+  - name: pre-order
+    type: boolean
+    label: Pre-order
+  label: Lash Details
+- name: search_engine_optimization
+  type: include
+  config: {}
+  template: seo
+  label: Search Engine Optimization
+- name: url
+  type: include
+  config: {}
+  template: url
+  label: URL
+- type: blocks
+  name: customOptions
+  label: Custom Options
+  template_types:
+  - text-option
+  - text-block-option
+  - checkbox-option
+  - simple-dropdown-option
+  - advanced-dropdown-option
+pages:
+- content/products/boo-thang.md
+- content/products/corwink-lash-glue.md
+- content/products/enchanted.md
+- content/products/eyelash.md
+- content/products/faux-lux-lash.md
+- content/products/faux-mink-lash.md
+- content/products/hottie-quinn.md
+- content/products/lil-lavendar-uv-neon-pastel-liner.md
+- content/products/magic-liner-black.md
+- content/products/magnetic-liner.md
+- content/products/mink-eyelash.md
+- content/products/minty-green-uv-neon-pastel-liner.md
+- content/products/minty-mist-uv-neon-pastel-liner.md
+- content/products/mr.grinch.md
+- content/products/oh-my-orange-uv-neon-pastel-liner.md
+- content/products/peri-winkle.md
+- content/products/pixie.md
+- content/products/pretty-in-pink-uv-neon-pastel-liner.md
+- content/products/purple-reign.md
+- content/products/queen-fairy.md
+- content/products/starlight.md
+- content/products/sun.md
+- content/products/unique.md
+- content/products/uv-neon-pastel-baby-blue-liner.md
+- content/products/uv-neon-pastel-liners.md

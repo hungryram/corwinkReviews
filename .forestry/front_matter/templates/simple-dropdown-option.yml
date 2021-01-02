@@ -1,0 +1,11 @@
+---
+label: Simple dropdown option
+hide_body: false
+fields:
+- type: include
+  name: essential
+  label: Essential
+  template: base-product-option
+- type: list
+  name: options
+  label: Options

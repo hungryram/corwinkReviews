@@ -1,0 +1,8 @@
+---
+label: Text block option
+hide_body: false
+fields:
+- type: include
+  name: essential
+  label: Essential
+  template: base-product-option

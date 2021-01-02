@@ -1,0 +1,170 @@
+---
+label: Profile
+hide_body: true
+fields:
+- name: company_name
+  type: text
+  config:
+    required: false
+  label: Company Name
+- name: primary_contact
+  type: field_group
+  config: {}
+  fields:
+  - name: full_name
+    type: text
+    config:
+      required: false
+    label: Full Name
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email Address
+  - name: phone
+    type: text
+    config:
+      required: false
+    label: Phone
+  - name: street_address
+    type: text
+    config:
+      required: false
+    label: Street Address
+  - name: city
+    type: text
+    config:
+      required: false
+    label: City
+  - name: state
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Alabama
+      - Alaska
+      - Arizona
+      - Arkansas
+      - California
+      - Colorado
+      - Connecticut
+      - Delaware
+      - Florida
+      - Georgia
+      - Hawaii
+      - Idaho
+      - Illinois
+      - Indiana
+      - Iowa
+      - Kansas
+      - Kentucky
+      - Louisiana
+      - Maine
+      - Maryland
+      - Massachusetts
+      - Michigan
+      - Minnesota
+      - Mississippi
+      - Missouri
+      - Montana
+      - Nebraska
+      - Nevada
+      - New Hampshire
+      - New Jersey
+      - New Mexico
+      - New York
+      - North Carolina
+      - North Dakota
+      - Ohio
+      - Oklahoma
+      - Oregon
+      - Pennsylvania
+      - Rhode Island
+      - South Carolina
+      - South Dakota
+      - Tennessee
+      - Texas
+      - Utah
+      - Vermont
+      - Virginia
+      - Washington
+      - West Virginia
+      - Wisconsin
+      - Wyoming
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: State
+  - name: zip_code
+    type: number
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+    label: Zip Code
+  label: Primary Contact
+- name: social_accounts
+  type: field_group
+  config: {}
+  fields:
+  - name: instagram
+    type: text
+    config:
+      required: false
+    label: Instagram
+  - name: twitter
+    type: text
+    config:
+      required: false
+    label: Twitter
+  - name: facebook
+    type: text
+    config:
+      required: false
+    label: Facebook
+  - name: Yelp
+    type: text
+    config:
+      required: false
+    label: Yelp
+  - name: youtube
+    type: text
+    config:
+      required: false
+    label: Youtube
+  - name: linkedin
+    type: text
+    config:
+      required: false
+    label: Linkedin
+  - name: pinterest
+    type: text
+    config:
+      required: false
+    label: Pinterest
+  label: Social Accounts
+- name: search_engine_optimization
+  type: field_group
+  config: {}
+  fields:
+  - name: title_tag
+    type: text
+    config:
+      required: false
+    label: Title Tag
+  - name: meta_description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Meta Description
+  label: Search Engine Optimization

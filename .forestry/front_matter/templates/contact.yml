@@ -1,0 +1,25 @@
+---
+label: Contact
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: body_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Body Text
+- name: search_engine_optimization
+  type: include
+  config: {}
+  template: seo
+  label: Search Engine Optimization
+pages:
+- content/contact/_index.md

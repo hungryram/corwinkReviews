@@ -1,0 +1,188 @@
+---
+label: Design
+hide_body: true
+fields:
+- name: logo_and_title
+  type: field_group
+  config: {}
+  fields:
+  - name: logo
+    type: file
+    config:
+      maxSize: 64
+    label: Logo
+  - name: company_title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: favicon
+    type: file
+    config:
+      maxSize: 64
+    label: Favicon
+  label: Logo and Title
+- name: home_slideshow
+  type: field_group
+  config: {}
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  - name: hero_subtitle
+    type: text
+    config:
+      required: false
+    label: Hero Subtitle
+  - name: hero_title
+    type: text
+    config:
+      required: false
+    label: Hero Title
+  - name: button_text
+    type: text
+    config:
+      required: false
+    label: Button Text
+  - name: button_link
+    type: text
+    config:
+      required: false
+    label: Button Link
+  - name: body
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Body
+  label: Home Hero
+- name: home_layout
+  type: field_group
+  config: {}
+  fields:
+  - name: introduction
+    type: field_group
+    config: {}
+    fields:
+    - name: body
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: markdown
+      label: Body
+    label: Introduction
+  - name: featured
+    type: field_group
+    config: {}
+    fields:
+    - name: featured_one
+      type: field_group
+      config: {}
+      fields:
+      - name: heading
+        type: text
+        config:
+          required: false
+        label: Heading
+      - name: link
+        type: text
+        config:
+          required: false
+        label: Link
+      - name: image
+        type: file
+        config:
+          maxSize: 64
+        label: Image
+      label: Featured One
+    - name: featured_two
+      type: field_group
+      config: {}
+      fields:
+      - name: heading
+        type: text
+        config:
+          required: false
+        label: Heading
+      - name: link
+        type: text
+        config:
+          required: false
+        label: Link
+      - name: image
+        type: file
+        config:
+          maxSize: 64
+        label: Image
+      label: Featured Two
+    - name: featured_three
+      type: field_group
+      config: {}
+      fields:
+      - name: heading
+        type: text
+        config:
+          required: false
+        label: Heading
+      - name: link
+        type: text
+        config:
+          required: false
+        label: Link
+      - name: image
+        type: file
+        config:
+          maxSize: 64
+        label: Image
+      label: Featured Three
+    - name: featured_four
+      type: field_group
+      config: {}
+      fields:
+      - name: heading
+        type: text
+        config:
+          required: false
+        label: Heading
+      - name: link
+        type: text
+        config:
+          required: false
+        label: Link
+      - name: image
+        type: file
+        config:
+          maxSize: 64
+        label: Image
+      label: Featured Four
+    label: Featured
+  label: Home Layout
+- name: footer
+  type: field_group
+  config: {}
+  fields:
+  - name: footer_logo
+    type: file
+    config:
+      maxSize: 64
+    label: Footer Logo
+  - name: footer_bio
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Footer Bio
+  label: Footer
+pages:
+- data/design.yaml

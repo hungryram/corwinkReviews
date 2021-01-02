@@ -1,0 +1,26 @@
+---
+label: FAQ
+hide_body: true
+fields:
+- name: faq
+  type: field_group_list
+  fields:
+  - name: question
+    type: text
+    config:
+      required: true
+    label: Question
+  - name: answer
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Answer
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: FAQ

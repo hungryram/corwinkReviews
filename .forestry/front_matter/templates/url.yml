@@ -1,0 +1,10 @@
+---
+label: URL
+hide_body: true
+fields:
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
+  description: URL is generated automatically. Only change when need to.

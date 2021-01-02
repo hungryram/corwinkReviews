@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: document
+  path: content/snipcart.md
+  label: Snipcart
+  read_only: true
 - type: heading
   label: My Profile
 - type: document

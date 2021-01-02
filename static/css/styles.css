@@ -148,6 +148,10 @@ body {
     overflow: hidden;
 }
 
+.subtitle strong {
+    color: #ac94e8;
+}
+
 @media screen and (max-width:768px){
     .section {
         padding: 3rem 1rem;

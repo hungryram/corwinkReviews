@@ -168,3 +168,31 @@ fields:
         format: markdown
     label: Meta Description
   label: Search Engine Optimization
+- name: welcome
+  type: field_group
+  config: {}
+  fields:
+  - name: welcome
+    type: field_group_list
+    fields:
+    - name: heading
+      type: text
+      config:
+        required: false
+      label: Heading
+    - name: link
+      type: text
+      config:
+        required: false
+      label: Link
+    - name: image
+      type: file
+      config:
+        maxSize: 64
+      label: Image
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Welcome
+  label: Welcome

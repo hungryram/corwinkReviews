@@ -13,7 +13,7 @@ home_slideshow:
   hero_title: Winter Wink Collection
   button_text: Shop Now
   button_link: "/collections/seasonal-winter-wink-collection/"
-  body: Limited time only until January 11th.
+  body: "Limited Time Only!  \nAvailable until January 11th."
 colors:
   enable_black_menu_items: true
   header_background_color: "#FFFFFF"

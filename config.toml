@@ -1,5 +1,5 @@
 DefaultContentLanguage = "en"
-baseURL = "https://corwink2021.netlify.app/"
+baseURL = "https://www.corwinkcosmetics.com/"
 canonifyUrls = "false"
 languageCode = "en-us"
 publishdir = "public"

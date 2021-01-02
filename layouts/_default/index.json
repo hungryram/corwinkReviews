@@ -1,5 +1,5 @@
 {{- $.Scratch.Add "index" slice -}}
 {{- range where .Site.RegularPages "Type" "products" -}}
-    {{- $.Scratch.Add "index" (dict "title" .Title "price" .Params.price "sale_price" (index .Params "sale_price") "tags" .Params.tags "image" .Params.gallery "lash-type" (index .Params "lash-types") "categories" .Params.categories "contents" .Plain "permalink" .Permalink) -}}
+    {{- $.Scratch.Add "index" (dict "title" .Title "price" .Params.price "sale_price" (index .Params "sale_price") "tags" .Params.tags "image" .Params.gallery "lash-type" (index .Params "lash-types") "categories" .Params.categories "contents" .Plain "permalink" .RelPermalink) -}}
 {{- end -}}
 {{- $.Scratch.Get "index" | jsonify -}}

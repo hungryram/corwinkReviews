@@ -81,6 +81,15 @@ label[for]:hover {
     font-weight: 500;
 }
 
+.review-form input.input,
+.review-form textarea.textarea {
+    border: 1px solid #CACACA;
+}
+
+.modal.is-active {
+    padding: 20px;
+}
+
 /* NAVBAR */
 
 div.top-bar {
@@ -133,6 +142,24 @@ div.search-nav input.input::placeholder {
     font-family: 'Roboto', sans-serif;
 }
 
+/* GLOBAL */
+
+body {
+    overflow: hidden;
+}
+
+@media screen and (max-width:768px){
+    .section {
+        padding: 3rem 1rem;
+    }
+    
+}
+
+body .content #share-buttons a {
+    color: #D282D9;
+    text-decoration: none;
+    margin-right: 10px;
+}
 /* FOOTER */
 
 footer.footer {
@@ -219,6 +246,28 @@ body .content p,
     border-bottom-right-radius: 30px;
 }
 
+/* HOME FEATURED */
+h3.head.is-5.has-text-weight-normal.featured-heading {
+    background: #f0eaff;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 18px;
+    color: #5e5e5e;
+    font-weight: 700;
+}
+
+div.featured {
+    transition: .3s;
+
+}
+
+div.featured:hover {
+    box-shadow: 0px 14px 15px 0px #e6d7ff;
+    transition: .3s;
+}
+
 /* HERO */
 
 .accent {
@@ -272,6 +321,12 @@ a.hero-btn {
 
 
 /* PRODUCT */
+
+@media screen and (max-width: 768px){
+    div div.card-image img {
+        height: 200px;
+    }
+}
 
 div.card-image img {
     width: 100%;
@@ -357,7 +412,8 @@ div.line {
 	font-family: Montserrat, sans-serif;
 	cursor: pointer;
 	width: 100%;
-	transition: all .2s ease
+    transition: all .2s ease;
+    border-radius: 8px;
 }
 .add__cart button:hover {
     background-image: linear-gradient(to right, #b28ae6 0%, #7FD7EF 51%, #8c51d8 100%);

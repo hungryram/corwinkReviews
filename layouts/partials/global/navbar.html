@@ -1,8 +1,10 @@
 {{ if not $.IsHome }}
 <div class="top-bar">
+<div class="section pt-0 pb-0">
   <div class="container">
     <p class="has-text-white is-size-7 pt-2 pb-2">Luxury lashes for your beautiful self</p>
   </div>
+</div>
 </div>
 {{ end }}
 <div class="hero-head"{{ if not $.IsHome }}style="border-bottom: 1px solid rgb(213 213 213 / 20%);"{{ end }}>
@@ -49,6 +51,8 @@
                   <a href="{{ .URL |absURL }}" class="navbar-item">{{ .Name }}</a>
               {{ end }}
               {{ end }} <!-- End range menu -->
+              <a href="" class="snipcart-customer-signin navbar-item">My Account</a>
+
               <div class="navbar-item">
                 <form action="{{ "search" | absURL }}">
                   <div class="field search-nav">

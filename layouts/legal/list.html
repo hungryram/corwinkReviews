@@ -1,0 +1,15 @@
+  
+{{ define "main" }}
+<div class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+        {{ range .Pages }}
+            <div class="column is-half is-offset-one-quarter card mt-2">
+              <h1 class="title is-5">{{ .Title }}</h1>
+              <a href="{{ .Permalink }}" class="link">Read more</a>  
+            </div>
+        {{ end }}
+    </div>
+    </div>
+</div>
+{{ end }}

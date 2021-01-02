@@ -5,9 +5,9 @@
                 <h1 class="head is-4 has-text-weight-bold"><div class="line"></div>Featured Products</h1>
             </div>
         </div>
-        <div class="columns is-multiline">
+        <div class="columns is-multiline is-mobile">
             {{ range first 4 (where .Site.RegularPages.ByWeight "Type" "products") }}
-                <div class="column is-3">
+                <div class="column is-6-mobile">
                     {{ partial "templates/product__thumbnail" . }}
                 </div>
             {{ end }}

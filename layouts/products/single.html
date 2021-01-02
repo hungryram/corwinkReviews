@@ -26,7 +26,7 @@
             <div class="column is-6">
                 <div class="product-slide">
                     {{ range .Params.gallery }}
-                    <div><img src="{{ . }}" alt="{{ $.Title }}" style="margin: 0 auto"></div>
+                    <div><img src="{{ . }}" alt="{{ $.Title }}" style="margin: 0 auto;border-radius:10px;"></div>
                     {{ end }}
                   </div>
             </div>
@@ -44,12 +44,6 @@
                 <span class="product__price">
                     <p class="has-text-left-mobile is-size-5 has-text-left-desktop has-text-weight-bold">{{ if .Params.on_sale }} <span class="sale-price mr-2">${{ lang.NumFmt 2 .Params.price }} </span>${{ lang.NumFmt 2 .Params.sale_price }}{{ else }}${{ lang.NumFmt 2 .Params.price }}{{ end }}</p>
                 </span>
-                
-                <div class="columns mt-4">
-                    <div class="column content">
-                        {{ .Content }}
-                    </div>
-                </div>
 
                 <div class="columns is-mobile mt-4">
                     {{ if index .Params.customOptions 0 }}
@@ -133,6 +127,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="columns mt-4">
+                    <div class="column content">
+                        {{ .Content }}
+                    </div>
+                </div>
                 <div class="product-crueltyfree pt-5 pb-5">
                     <article class="media">
                         <div class="media-left">
@@ -205,7 +204,7 @@
                 <p class="mb-4">Share your thoughts with other customers</p>
                 <p class="button review-btn">Write a Review</p>
                 <div class="review-form mt-6 hidden">
-                    <form name="Comments" action="/comment-thanks" method="POST" netlify-honeypot="bot-field" netlify>
+                    <form name="Comments" action="/thank-you" method="POST" netlify-honeypot="bot-field" netlify>
                         <input name="bot-field" type="hidden"/>
                         <input name="path" type="hidden" value="{{ .RelPermalink }}">
                         <div class="field rating">

@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-three-fifths is-offset-one-fifth">
+                <div class="content">
+                    <h1 class="title is-4 has-text-centered">CorWink Cosmetics {{ .Title }}</h1>
+                    <p><strong>Last Updated: </strong>{{ .Params.last_update }}</p>
+                    <p><strong>Our Website:</strong> {{ .Site.BaseURL }}</p>
+                    {{ if in .Permalink "privacy" }}
+                    <p>By using our website, you consent to our Privacy Policy and agree to its terms. Your privacy is important to us. CorWink Cosmetics ("We", "us", "our" "CorWink Cosmetics") provides this privacy policy to address any privacy concerns you may have and how we use it. If you have any additional questions or require more information, please contact us.</p>
+                    {{ end }}
+                    {{ if in .Permalink "terms-and-conditions" }}
+                    <p>By using our website, you agree to be governed by the Terms and Conditions set forth within this website. CorWink Cosmetics ("We", "us", "our" "CorWink Cosmetics") provides this agreement for you to accept and agree to be bound, without modification, limitation or qualification by the Terms. Please read thoroughly and contact us if you have any questions or concerns</p>
+                    {{ end }}
+                    {{ .Content }}
+                    {{ if in .Permalink "terms-and-conditions" }}
+                    <h5>Limitation of liability</h5>
+                    <p>In no event shall CorWink Cosmetics, nor any of its officers, directors and employees, shall be held liable for anything arising out of or in any way connected with your use of this Website whether such liability is under contract.  CorWink Cosmetics, including its officers, directors and employees shall not be held liable for any indirect, consequential or special liability arising out of or in any way related to your use of this Website.</p>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

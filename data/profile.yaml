@@ -23,7 +23,7 @@ welcome:
   welcome:
   - heading: Visit the Website
     link: "/"
-    image: https://res.cloudinary.com/hungryram19/image/upload/v1609121733/corinne-renteria/corwinkcosmetics/corwinklogo_aulh2x.png
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1606462839/corinne-renteria/corwinkcosmetics/favicon_sypa3f.png
   - image: https://res.cloudinary.com/hungryram19/image/upload/v1609121737/corinne-renteria/corwinkcosmetics/img_1058_r1lwlu.jpg
     heading: Shop Magnetic Lashes
     link: "/lash-types/magnetic-lashes/"

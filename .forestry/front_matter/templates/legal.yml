@@ -12,3 +12,8 @@ fields:
   config:
     required: false
   label: Last Updated
+- name: seo
+  type: include
+  config: {}
+  template: seo
+  label: SEO

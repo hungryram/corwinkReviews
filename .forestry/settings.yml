@@ -16,6 +16,8 @@ sections:
   label: Legals
   create: documents
   match: "**/*"
+  templates:
+  - legal
 - type: document
   path: data/design.yaml
   label: Design

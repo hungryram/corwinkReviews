@@ -1,5 +1,5 @@
 +++
-draft = false
+last_updated = "January 2, 2021"
 title = "Terms & Conditions"
 url = ""
 [search_engine_optimization]

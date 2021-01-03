@@ -11,6 +11,11 @@ sections:
   label: Profile
 - type: heading
   label: My Website
+- type: directory
+  path: content/legal
+  label: Legals
+  create: documents
+  match: "**/*"
 - type: document
   path: data/design.yaml
   label: Design

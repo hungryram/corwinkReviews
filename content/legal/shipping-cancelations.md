@@ -1,4 +1,5 @@
 +++
+last_updated = "January 2, 2021"
 title = "Shipping & Cancellations"
 url = "shipping and cancellation"
 [search_engine_optimization]
@@ -8,7 +9,9 @@ title_tag = "Corwink Cosmetics | Shipping and Cancellations"
 +++
 **SHIPPING**
 
-All of our orders are Shipped within 2-3 days. Shipping usually takes about 2-7 business days to deliver. **_Due to COVID-19, shipping carriers may be experiencing delays. _**Unfortunately we do not ship international.
+All of our orders are Shipped within 2-3 days. Shipping usually takes about 2-7 business days to deliver. 
+
+**Due to COVID-19, shipping carriers may be experiencing delays. Unfortunately we do not ship international.**
 
 **CANCELLATIONS**
 

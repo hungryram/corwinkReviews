@@ -1,4 +1,11 @@
 var gulp = require('gulp'),
+    postcss = require('gulp-postcss'),
+    concatCss = require('gulp-concat-css'),
+    cssnano = require('gulp-cssnano'),
+    concat = require('gulp-concat'),
+    purgecss = require('gulp-purgecss'),
+    request = require('request'),
+    fs = require('fs'),
     config = require('dotenv').config();
 
 var buildSrc = "./";
@@ -55,6 +62,30 @@ gulp.task("get-comments", function (done) {
       done();
     }
   });
+});
+
+gulp.task('procss', function () {
+    return gulp.src('./src/css/page.css')
+      .pipe(postcss([
+        require('tailwindcss'),
+        require('autoprefixer'),
+      ]))
+      .pipe(purgecss({
+        content: ['./layouts/**/*.html','./content/**/*.md'],
+        defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+        whitelist: [':focus', 'button', 'button:focus'],
+        whitelistPatterns: [/(:\w+)/g]
+      }))
+      .pipe(concatCss('page.css'))
+      .pipe(cssnano({
+        reduceIdents: false,
+        discardComments: {removeAll: true}
+      }))
+      .pipe(gulp.dest('static/css/'));
+});
+
+gulp.task('watchcss', function() {
+  gulp.watch('./src/css/*.css', gulp.series('procss'));
 });
 
 gulp.task('dev', gulp.series('procss','get-comments'));

@@ -1,11 +1,4 @@
 var gulp = require('gulp'),
-    postcss = require('gulp-postcss'),
-    concatCss = require('gulp-concat-css'),
-    cssnano = require('gulp-cssnano'),
-    concat = require('gulp-concat'),
-    purgecss = require('gulp-purgecss'),
-    request = require('request'),
-    fs = require('fs'),
     config = require('dotenv').config();
 
 var buildSrc = "./";

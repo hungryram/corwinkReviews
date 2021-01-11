@@ -7,6 +7,7 @@ lash-materials = []
 lash-types = ["Strip Lashes"]
 on_sale = false
 order_products = "4"
+out_of_stock = true
 price = 9.99
 sale_price = 8.49
 short_title = "Feel Beautiful"

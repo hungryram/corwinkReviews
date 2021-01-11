@@ -108,6 +108,9 @@
                 <div class="add__cart pb-5 pt-5">
                     <div class="columns is-variable is-0 is-mobile">
                         <div class="column">
+                            {{ if .Params.out_of_stock }}
+                            <button class="button" title="Disabled button" disabled>Out of Stock</button>
+                            {{ else }}
                             <button 
                             class="snipcart-add-item"
                             id="add-cart"
@@ -124,6 +127,7 @@
                             >
                             + Add to Cart
                             </button>
+                            {{ end }}
                         </div>
                     </div>
                 </div>

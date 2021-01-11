@@ -24,7 +24,8 @@ meta_description = "Our Starlight Magnetic Lash is made from 100% Real Siberian 
 title_tag = "Starlight Magnetic Lash | Magnetic Lash | CorWink Cosmetics"
 
 +++
-* Magnetic Liner **NOT** Included
+
+- Magnetic Liner **NOT** Included
 
 Shine bright like the star you are! 🌟
 
@@ -32,7 +33,7 @@ Our **Starlight** lash is made from **100% Real Siberian Mink, Cruelty Free** of
 
 Did we mention it's... **MAGNETIC!**
 
-This lash comes with 5 weightless magnets so your look can last _all day!_ 
+This lash comes with 5 weightless magnets so your look can last _all day!_
 
 This lash has a **Doll Look effect** which gives the illusion of wider eyes. You will look more awake with this lash especially because they have a **soft**, **light**, and **fluffy** appeal.
 

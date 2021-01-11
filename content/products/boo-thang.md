@@ -25,7 +25,8 @@ meta_description = "Our Boo! Thang lash is made from 100% Real Siberian Mink, Cr
 title_tag = "Boo! Thang Lash | Strip Lash | CorWink Cosmetics"
 
 +++
-* Glue Not Included
+
+- Glue Not Included
 
 This is a _seasonal lash_ and is here for a **Limited Time ONLY!**
 

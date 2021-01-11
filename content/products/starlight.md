@@ -6,6 +6,7 @@ gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1609121737/cori
 lash-materials = ["Real Siberian Mink"]
 lash-types = ["Magnetic Lashes"]
 on_sale = false
+out_of_stock = true
 price = 14.99
 sale_price = 14.24
 sku = "020"
@@ -24,7 +25,6 @@ meta_description = "Our Starlight Magnetic Lash is made from 100% Real Siberian 
 title_tag = "Starlight Magnetic Lash | Magnetic Lash | CorWink Cosmetics"
 
 +++
-
 - Magnetic Liner **NOT** Included
 
 Shine bright like the star you are! 🌟

@@ -43,14 +43,14 @@ fields:
   showOnly:
     field: on_sale
     value: true
-- name: out_of_stock
-  type: boolean
-  label: Out of Stock
 - name: sku
   type: text
   config:
     required: false
   label: SKU
+- name: out_of_stock
+  type: boolean
+  label: Out of Stock
 - name: collections
   type: tag_list
   default: []

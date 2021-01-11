@@ -6,6 +6,7 @@ gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1609121739/cori
 lash-materials = ["Vegan Faux Mink"]
 lash-types = ["Magnetic Lashes"]
 on_sale = false
+out_of_stock = true
 price = 13.99
 sale_price = 13.29
 sku = "022"

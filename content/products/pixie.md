@@ -6,6 +6,7 @@ gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1609121738/cori
 lash-materials = ["Real Siberian Mink"]
 lash-types = ["Magnetic Lashes"]
 on_sale = false
+out_of_stock = true
 price = 14.99
 sale_price = 14.24
 sku = "021"

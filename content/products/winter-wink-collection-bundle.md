@@ -6,6 +6,7 @@ gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1609121740/cori
 lash-materials = ["Real Siberian Mink"]
 lash-types = ["Colored Lashes", "Strip Lashes"]
 on_sale = true
+out_of_stock = true
 price = 39.99
 sale_price = 24
 sku = "028"

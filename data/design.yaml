@@ -16,7 +16,9 @@ home_slideshow:
   body: |-
     NO CODE NEEDED
 
-    Discount Available From 1/14-1/25
+    Discount Available
+
+    From 1/14-1/25
 colors:
   enable_black_menu_items: true
   header_background_color: "#FFFFFF"

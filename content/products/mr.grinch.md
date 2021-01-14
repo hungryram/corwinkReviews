@@ -1,11 +1,13 @@
 +++
 collections = ["Seasonal Winter Wink Collection"]
 customOptions = []
+draft = true
 eyeliners = []
 gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1609121740/corinne-renteria/corwinkcosmetics/img_1455_ggwazo.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1609121740/corinne-renteria/corwinkcosmetics/img_1465-copy_a7k87q.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1609121739/corinne-renteria/corwinkcosmetics/img_1433_erqxd6.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1609121739/corinne-renteria/corwinkcosmetics/img_1438_ayxwu4.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1609121739/corinne-renteria/corwinkcosmetics/img_1443_ndreu3.jpg"]
 lash-materials = ["Real Siberian Mink"]
 lash-types = ["Colored Lashes", "Strip Lashes"]
 on_sale = true
+out_of_stock = false
 price = 14.99
 sale_price = 9
 sku = "025"

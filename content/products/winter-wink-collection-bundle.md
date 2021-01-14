@@ -1,6 +1,7 @@
 +++
 collections = ["Seasonal Winter Wink Collection"]
 customOptions = []
+draft = true
 eyeliners = []
 gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1609121740/corinne-renteria/corwinkcosmetics/img_1465-copy_a7k87q.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1609121740/corinne-renteria/corwinkcosmetics/img_1501_o6yqti.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1609121739/corinne-renteria/corwinkcosmetics/img_1438_ayxwu4.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1609121732/corinne-renteria/corwinkcosmetics/c86955a5-63d1-4941-9d2d-220e04c4e612_vszgzb.jpg"]
 lash-materials = ["Real Siberian Mink"]

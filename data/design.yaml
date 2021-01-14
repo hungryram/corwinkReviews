@@ -10,13 +10,10 @@ home_slideshow:
   slideshow_subtitle: Luxury Lashes by Corwink
   image: https://res.cloudinary.com/hungryram19/image/upload/v1609996789/corinne-renteria/corwinkcosmetics/optimized-corwink-background_r1tsa6.jpg
   hero_subtitle: CorWink Cosmetics
-  hero_title: Looking For A Magical Way To Spice Up Your Day?
+  hero_title: 10% OFF Magic Liner Pens
   button_text: Shop Now
   button_link: https://www.corwinkcosmetics.com/eyeliners/magic-liners/
-  body: |-
-    **10% OFF** Magic Liner PenS
-
-    NO CODE NEEDED
+  body: NO CODE NEEDED
 colors:
   enable_black_menu_items: true
   header_background_color: "#FFFFFF"

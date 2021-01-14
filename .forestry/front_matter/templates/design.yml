@@ -37,9 +37,13 @@ fields:
       required: false
     label: Hero Subtitle
   - name: hero_title
-    type: text
+    type: textarea
+    default: ''
     config:
       required: false
+      wysiwyg: true
+      schema:
+        format: markdown
     label: Hero Title
   - name: button_text
     type: text

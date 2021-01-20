@@ -2,7 +2,7 @@
 collections = ["Corwink Classics"]
 customOptions = []
 eyeliners = []
-gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1611127297/corinne-renteria/corwinkcosmetics/dare-me_nw2wsd.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1609372775/corinne-renteria/corwinkcosmetics/dare-me-1cropped_br9wlx.png", "https://res.cloudinary.com/hungryram19/image/upload/v1609121734/corinne-renteria/corwinkcosmetics/dare-me-3_kglthi.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1609121734/corinne-renteria/corwinkcosmetics/dare-me-2_oeeovu.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1609121735/corinne-renteria/corwinkcosmetics/dare-me-lash_mcarzp.png"]
+gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1609372775/corinne-renteria/corwinkcosmetics/dare-me-1cropped_br9wlx.png", "https://res.cloudinary.com/hungryram19/image/upload/v1609121734/corinne-renteria/corwinkcosmetics/dare-me-3_kglthi.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1609121734/corinne-renteria/corwinkcosmetics/dare-me-2_oeeovu.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1609121735/corinne-renteria/corwinkcosmetics/dare-me-lash_mcarzp.png"]
 lash-materials = ["Real Siberian Mink"]
 lash-types = ["Strip Lashes"]
 on_sale = false

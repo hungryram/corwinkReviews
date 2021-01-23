@@ -8,7 +8,7 @@ lash-materials = []
 lash-types = []
 on_sale = false
 out_of_stock = false
-price = nil
+price = 8.99
 sale_price = 0
 sku = "029"
 title = "Rose Makeup Brush"
@@ -26,3 +26,20 @@ meta_description = ""
 title_tag = ""
 
 +++
+🌹 Rose Makeup Brush 🌹
+
+\~ Limited Time Only \~
+
+Available Through March 1st
+
+***
+
+Treat yourself this Valentine’s Day! ❤️
+
+Or
+
+Give The Gift Of A Rose To That Special Someone 😉
+
+***
+
+Our Rose Makeup Brush is great to use for any makeup look! It's soft synthetic bristols make for a perfect blend & application. The Rose Makeup Brush is light-weight and so fun to use! Choose from a variety of styles to meet your makeup dreams! ✨

@@ -24,7 +24,7 @@ meta_description = ""
 title_tag = ""
 [[customOptions]]
 name = "Style"
-options = ["Gold & Gold", "Gold & Soft Pink", "Black & Pink"]
+options = ["Black & Pink", "Gold & Soft Pink", "Gold & Gold"]
 required = true
 template = "simple-dropdown-option"
 

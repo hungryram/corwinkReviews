@@ -10,20 +10,10 @@ home_slideshow:
   slideshow_subtitle: Luxury Lashes by Corwink
   image: https://res.cloudinary.com/hungryram19/image/upload/v1609996789/corinne-renteria/corwinkcosmetics/optimized-corwink-background_r1tsa6.jpg
   hero_subtitle: CorWink Cosmetics
-  hero_title: |-
-    ## 20% OFF
-
-    ## Magic Liner
-
-    ## Pens
+  hero_title: "## New Rose Makeup Brush"
   button_text: Shop Now
   button_link: https://www.corwinkcosmetics.com/eyeliners/magic-liners/
-  body: |-
-    **NO CODE NEEDED**
-
-    Discount Available
-
-    From 1/14-1/25
+  body: "**NO CODE NEEDED**\n\nLimited Time Only!  \nAvailableFrom 1/22-3/1"
 colors:
   enable_black_menu_items: true
   header_background_color: "#FFFFFF"

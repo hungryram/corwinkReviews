@@ -5,6 +5,7 @@ gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1609121739/cori
 lash-materials = []
 lash-types = []
 on_sale = false
+out_of_stock = false
 price = 8.99
 sale_price = 8.54
 sku = "024"
@@ -16,7 +17,7 @@ band = ""
 lash_height = ""
 length = ""
 material = ""
-pre-order = true
+pre-order = false
 vegan = true
 [search_engine_optimization]
 meta_description = ""

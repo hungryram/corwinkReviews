@@ -50,7 +50,7 @@ _Who wouldn't want to get more use out of their lashes?_
 * _Waterproof_
 * _Quick Dry (Smooth Tacky - Smooth Dry)_
 * _Hypo-Allergenic_
-* _10 Hour Hold_
+* _Up To 10 Hour Hold_
 * _Removes With Normal Makeup Remover_
 * _Portable (Easy For Re-Application)_
 

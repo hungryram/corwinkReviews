@@ -1,7 +1,7 @@
 +++
 title = "FAQ"
 [[faq]]
-answer = "Yes, all ingredients listed below are safe & are commonly found in most cosmetics, however, we strongly suggest that you try our products on a small patch of skin (other than the intended location), to test for any allergic reactions first. We also urge everyone to review our product ingredients first to avoid sensitivities.\n\n**Ingredients:**\n\nWater, Cyclomethicone, Povidone, Propylene Glycol, Red Iron Oxide, Stearic Acid, Carnauba Wax, Ethylhexyl Palmitate, Beeswax, Haxadecan, Phenox"
+answer = "Yes, all ingredients listed below are safe & are commonly found in most cosmetics, however, we strongly suggest that you try our products on a small patch of skin (other than the intended location), to test for any allergic reactions first. We also urge everyone to review our product ingredients first to avoid sensitivities.\n\n**Ingredients:**\n\nWater, Cyclomethicone, Povidone, Propylene Glycol, Red Iron Oxide, Stearic Acid, Carnauba Wax, Ethylhexyl Palmitate, Beeswax, Haxadecan, Phenoxyethanol"
 question = "Is The Magic Liner Pen Ingredients Safe/Cruetly-Free?"
 [[faq]]
 answer = "If you **LOVE** our lashes and can’t wait to show the world, we would love to collab with you! Here's how to start: 1. Tag @corwinkcosmetics and #corwinkcrew in your Instagram posts 2. Send us a DM!"

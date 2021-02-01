@@ -144,7 +144,7 @@ div.search-nav input.input::placeholder {
 
 @media screen and (max-width: 768px) {
   section.hero.is-fullheight {
-    background: url("/uploads/mobilebanner8.jpg");
+    background: url("https://res.cloudinary.com/hungryram19/image/upload/v1612217148/corinne-renteria/corwinkcosmetics/mobilebannercorinne_q45pdk.jpg");
     background-size: cover;
   }
 

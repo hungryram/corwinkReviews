@@ -41,7 +41,7 @@ answer = "Apply a coat the same thickness as the magnets and make sure it's 80% 
 question = "How do I make the Magnetic Lashes stick to the Magnetic Liner better?"
 [[faq]]
 answer = "The Magnetic Eyeliner ingredients are all commonly found in makeup and skincare products & are cruelty free. The added ingredient that makes the eyeliner work is iron oxide. See below for the breakdown and the safety level of all ingredients as cited in EWG's Skin Deep Cosmetic Database. However, for the health and safety of our customers, we do not recommend any eye products to anyone with pre-existing eye conditions.\n\n\\*We strongly suggest that you try our products on a small patch of skin (other than the intended location), to test for any allergic reactions first. We also urge everyone to review our product ingredients first to avoid sensitivities."
-question = "What is in the Magnetic Liner & is it safe/cruelty free?"
+question = "What is in the Magnetic Liner & is it safe/cruelty-free?"
 [[faq]]
 answer = "Yes, all our products have been tested for safety. Our eyeliner has the same types of ingredients you might see in other liners or mascara. Now what makes our liner magnetic is our iron oxide ingredient. There are no heavy metals or parabens in our formula. Iron oxide is a cosmetic ingredient commonly used for pigment and is rated as non-toxic according to EWG’s skin deep profile. Of course, as with any eye cosmetic products, if you have any pre-existing eye conditions, consult your doctor."
 question = "The Magnetic Liner Ingredients/Is it safe?"

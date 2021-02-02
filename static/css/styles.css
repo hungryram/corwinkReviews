@@ -147,13 +147,13 @@ div.search-nav input.input::placeholder {
       background: url("https://res.cloudinary.com/hungryram19/image/upload/v1612217133/corinne-renteria/corwinkcosmetics/corinne-background_rmcofg.jpg");
       background-size: cover;
     }
-
+}
 @media screen and (max-width: 768px) {
     section.hero.is-fullheight {
     background: url("https://res.cloudinary.com/hungryram19/image/upload/v1612217148/corinne-renteria/corwinkcosmetics/mobilebannercorinne_q45pdk.jpg")!important;
     background-size: cover;
   }
-  
+}
 
 /* GLOBAL */
 
@@ -291,6 +291,7 @@ div.featured:hover {
 }
 
 /* HERO */
+
 
 .accent {
     color: #AC94E8;

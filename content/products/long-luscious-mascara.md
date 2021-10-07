@@ -20,7 +20,7 @@ lash_height = ""
 length = ""
 material = ""
 pre-order = false
-vegan = false
+vegan = true
 [search_engine_optimization]
 meta_description = ""
 title_tag = ""
@@ -28,8 +28,10 @@ title_tag = ""
 +++
 Our Brand New Long & Luscious Mascara Is AMAZING!
 
-This mascara will leave your lashes looking flawless as the wands comb-like structure blends the perfect amount of product while smoothing each lash to a beautiful long & luscious shape!
+This mascara will leave your lashes looking **flawless** as the wands comb-like structure blends the perfect amount of product while **smoothing** each lash to a beautiful **long & luscious** shape!
 
-Feel Beautiful, Feel YOU!
+Feel Beautiful, Feel **YOU!**
 
- Color: Black
+ **Color:** _Black_
+
+**Ingredients:** _Aqua, Acrylates/C12-22 Alkyl Methacrylate Copolymer, Laureth-21, Copernicia Cerifera (Carnauba) Wax, Propylene Glycol, Disteardimonium Hectorite, Cyclopentasiloxane, Hydrogenated Lecithin, Polysorbate 80, Propylene Carbonate, Glyceryl Stearate, Triethanolamine, Ci 77266, Stearic Acid, Phenoxyethanol, Xanthan Gum, Caprylyl Glycol._

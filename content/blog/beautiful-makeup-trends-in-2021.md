@@ -1,10 +1,9 @@
 +++
-categories = []
-date = ""
-draft = true
-featured_image = ""
-tags = []
-title = "Beautiful Makeup Trends In 2021"
+categories = ["Makeup Looks"]
+date = 2021-10-07T07:00:00Z
+featured_image = "https://res.cloudinary.com/hungryram19/image/upload/v1633599231/corinne-renteria/corwinkcosmetics/pexels-gabb-tapique-3568543_1_wukyzf.jpg"
+tags = ["Fall"]
+title = "Fall Makeup Trends In 2021"
 [search_engine_optimization]
 meta_description = ""
 title_tag = ""

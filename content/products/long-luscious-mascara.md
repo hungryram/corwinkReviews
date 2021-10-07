@@ -1,7 +1,6 @@
 +++
 collections = []
 customOptions = []
-draft = true
 eyeliners = []
 gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1633591963/corinne-renteria/corwinkcosmetics/IMG_2232up_jm0s6a.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1633591971/corinne-renteria/corwinkcosmetics/IMG_2236_wonqrh.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1633591983/corinne-renteria/corwinkcosmetics/IMG_2228_ln9vbb.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1633591990/corinne-renteria/corwinkcosmetics/IMG_2242_n7ginz.jpg"]
 lash-materials = []
@@ -32,6 +31,6 @@ This mascara will leave your lashes looking **flawless** as the wands comb-like 
 
 Feel Beautiful, Feel **YOU!**
 
- **Color:** _Black_
+**Color:** _Black_
 
 **Ingredients:** _Aqua, Acrylates/C12-22 Alkyl Methacrylate Copolymer, Laureth-21, Copernicia Cerifera (Carnauba) Wax, Propylene Glycol, Disteardimonium Hectorite, Cyclopentasiloxane, Hydrogenated Lecithin, Polysorbate 80, Propylene Carbonate, Glyceryl Stearate, Triethanolamine, Ci 77266, Stearic Acid, Phenoxyethanol, Xanthan Gum, Caprylyl Glycol._

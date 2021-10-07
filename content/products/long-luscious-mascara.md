@@ -33,4 +33,6 @@ Feel Beautiful, Feel **YOU!**
 
 **Color:** _Black_
 
+**Caution:** Please perform a patch test before use in case of allergies. If contact in eyes, wash eyes thoroughly with water. If allergens persist, seek medical attention. Please keep out of reach of children. If you have pre-existing eye conditions, consult with a physician before using. Only use as directed.
+
 **Ingredients:** _Aqua, Acrylates/C12-22 Alkyl Methacrylate Copolymer, Laureth-21, Copernicia Cerifera (Carnauba) Wax, Propylene Glycol, Disteardimonium Hectorite, Cyclopentasiloxane, Hydrogenated Lecithin, Polysorbate 80, Propylene Carbonate, Glyceryl Stearate, Triethanolamine, Ci 77266, Stearic Acid, Phenoxyethanol, Xanthan Gum, Caprylyl Glycol._

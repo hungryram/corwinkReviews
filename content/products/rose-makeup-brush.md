@@ -31,13 +31,11 @@ template = "simple-dropdown-option"
 +++
 🌹 Rose Makeup Brush 🌹
 
-\~ Limited Time Only \~
-
-Available Through March 1st
+\~ IT'S BACK! \~
 
 ***
 
-Treat yourself this Valentine’s Day! ❤️
+Treat yourself! ❤️
 
 Or
 

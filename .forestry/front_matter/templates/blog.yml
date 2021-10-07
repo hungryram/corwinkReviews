@@ -34,3 +34,5 @@ fields:
   config: {}
   template: seo
   label: Search Engine Optimization
+pages:
+- content/blog/beautiful-makeup-trends-in-2021.md

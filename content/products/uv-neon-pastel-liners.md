@@ -35,4 +35,6 @@ _Length:_ 3cm/1.2inch
 
 _Height:_ 1.5cm/0.6inch
 
+**Caution:** Please perform a patch test before use in case of allergies. If contact in eyes, wash eyes thoroughly with water. If allergens persist, seek medical attention. Please keep out of reach of children. If you have pre-existing eye conditions, consult with a physician before using. Only use as directed.
+
 **Ingredients:** UV Colors : Talc, Glycerin, Acacia Senegal Gum, Polysorbate-20, Water, Propanediol, Methylparaben, Titanium Dioxide (CI 77891), FD&C Yellow No. 5 (CI 19140), FD&C Blue No. 1 (CI 42090), D&C Red No. 21 (CI 45380), D&C Orange No. 5 (CI 45370), D&C Yellow No. 7 (CI 45350), D&C Violet No. 2 (CI 60725)

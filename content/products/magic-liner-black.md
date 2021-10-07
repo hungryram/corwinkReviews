@@ -66,6 +66,8 @@ _Who wouldn't want to get more use out of their lashes?_
 
 Apply fast and make sure to get the inner & outer corners really well.
 
+**Caution:** Please perform a patch test before use in case of allergies. If contact in eyes, wash eyes thoroughly with water. If allergens persist, seek medical attention. Please keep out of reach of children. If you have pre-existing eye conditions, consult with a physician before using. Only use as directed.
+
 **Ingredients:**
 
 Water, Cyclomethicone, Povidone, Propylene Glycol, Red Iron Oxide, Stearic Acid, Carnauba Wax, Ethylhexyl Palmitate, Beeswax, Haxadecan, Phenoxyethanol

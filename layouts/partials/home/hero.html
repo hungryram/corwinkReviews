@@ -1,17 +1,17 @@
 {{ $hero := .Site.Data.design.home_slideshow }}
-<section class="hero is-fullheight" style="background:url({{ .Site.Data.design.home_slideshow.image }}) no-repeat 58%;background-size:cover;position:relative">
+<section class="hero is-fullheight">
 {{ partial "global/navbar" . }}
   
     <!-- Hero content: will be in the middle -->
     <div class="hero-body">
       <div class="container has-text-left">
         <div class="columns is-variable is-0">
-            <div class="column is-7">
-                <h4 class="title is-5 is-size-6-mobile">{{ $hero.hero_subtitle }}</h4>
+            <div class="column is-6">
+                <h4 class="title is-1 is-size-3-mobile gradient-heading">{{ $hero.hero_subtitle }}</h4>
                 <h1 class="title hero-title mb-6 is-size-3-mobile">
                   CorWink Cosmetics
                   </h1>
-                  <h2 class="subtitle mt-3 is-size-6-mobile">
+                  <h2 class="mt-3 is-size-6-mobile title is-4">
                     {{- $hero.body | markdownify -}}
                   </h2>
                   <div class="is-block">
@@ -20,6 +20,7 @@
             </div>
             <div class="column">
               <div>
+                <img src="https://res.cloudinary.com/hungryram19/image/upload/v1609121737/corinne-renteria/corwinkcosmetics/img_1096-2_ojgzfn.jpg" alt="">
               </div>
             </div>
         </div>

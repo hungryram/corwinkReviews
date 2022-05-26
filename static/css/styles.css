@@ -280,6 +280,24 @@ div.featured:hover {
 
 /* HERO */
 
+.gradient-heading {
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 4s ease-in-out infinite;
+    -moz-animation: animated_text 4s ease-in-out infinite;
+    -webkit-animation: animated_text 4s ease-in-out infinite;
+    background: linear-gradient(-45deg,#0b6ae6,#9107e1,#d300d6,#039be1);
+    -webkit-background: linear-gradient(-45deg,#0b6ae6,#9107e1,#d300d6,#039be1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+}
+
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}
+
 
 .accent {
     color: #AC94E8;
@@ -288,7 +306,23 @@ div.featured:hover {
 h1.title.hero-title {
     font-family: 'Playfair Display', serif;
     color: #0E283F;
-    font-size: 5em;
+    font-size: 2em;
+}
+
+.hero-body {
+    border: 15px solid #98b1eb;
+    position: relative;
+}
+
+.hero-body:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 5px solid #ae91e7;
 }
 
 button.button {
